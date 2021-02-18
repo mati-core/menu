@@ -6,7 +6,6 @@ declare(strict_types=1);
 namespace MatiCore\Menu;
 
 
-use Doctrine\Common\Util\Debug;
 use MatiCore\Menu\Entity\Menu;
 use MatiCore\Menu\Entity\MenuItem;
 use Nette\Caching\Cache;
@@ -195,7 +194,7 @@ class MenuManager
 
 	/**
 	 * @param string $group
-	 * @return Menu[]
+	 * @return array<Menu>
 	 */
 	public function getMenusByGroup(string $group): array
 	{
