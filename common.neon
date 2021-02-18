@@ -1,0 +1,10 @@
+parameters:
+	menu:
+		frontendMenu:
+			home:
+				title: Home
+				route: ':Front:Homepage:default'
+				position: 0
+
+services:
+	menuManager: MatiCore\Menu\MenuManager(%menu%)
