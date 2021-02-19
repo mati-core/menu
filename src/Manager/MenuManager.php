@@ -66,6 +66,7 @@ class MenuManager
 			$menu->setTitle($menuData['title'] ?? null);
 			$menu->setGroup($menuData['group'] ?? null);
 			$menu->setPosition($menuData['position'] ?? null);
+			$menu->setRight($menuData['right'] ?? null);
 
 			if (isset($menuData['items']) && count($menuData['items']) > 0) {
 				foreach ($menuData['items'] as $menuItemData) {

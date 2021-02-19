@@ -39,6 +39,11 @@ class Menu
 	private array $items;
 
 	/**
+	 * @var string|null 
+	 */
+	private string|null $right;
+
+	/**
 	 * Menu constructor.
 	 * @param string $callName
 	 */
@@ -126,6 +131,22 @@ class Menu
 	public function setGroup(?string $group): void
 	{
 		$this->group = $group;
+	}
+
+	/**
+	 * @return string|null
+	 */
+	public function getRight(): ?string
+	{
+		return $this->right;
+	}
+
+	/**
+	 * @param string|null $right
+	 */
+	public function setRight(?string $right): void
+	{
+		$this->right = $right;
 	}
 
 }
